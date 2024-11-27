@@ -1,0 +1,58 @@
+	<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zepeto Avatar Maker</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo Togo">
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#" onclick="toggleDropdown()">Menu</a>
+                    <ul class="dropdown-menu" id="dropdownMenu">
+                        <li><a href="#style">Style</a></li>
+                        <li><a href="#lainnya">Lainnya</a></li>
+                    </ul>
+                </li>
+                <li><a href="#tentang">Tentang Kami</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Selamat Datang di TrapCode Store</h1>
+        <p>Buat Avatar Zepetomu sendiri.</p>
+
+        <section id="info">
+            <h2>Info Halaman</h2>
+            <p>Di sini, Anda dapat menemukan berbagai informasi facecode atau avatar Zepeto yang kalian inginkan.</p>
+            <img src="assets/mainmenu.jpeg" alt="Gambar Zepeto">
+        </section>
+
+        <section id="model">
+            <h2>Katalog</h2>
+            <p>Informasi model dan style avatar Zepeto</p>
+        </section>
+
+        <section id="harga">
+            <h2>Harga berdasarkan style</h2>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; TrapCode Store</p>
+    </footer>
+
+    <script>
+        function toggleDropdown() {
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            dropdownMenu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
